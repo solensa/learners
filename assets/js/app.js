@@ -9,15 +9,11 @@ $(document).ready(function(){
   $("#chapter1").addClass("sidePanelChapterSelected");
   $("#contentPane1").addClass("visible");
 
-  $(".sidePanelChapterWrap li" ).each(function() {
-    var cookieText = "LOTF-" + this.id;
-    if (getCookie(cookieText)){
-      $("div",this).addClass("visible");
-    }
-  });
+  checkCookies();
   // var x = getCookie("LOTF-chapter1");
   // console.log(x);
 
+  //side panel click
   $( ".sidePanelChapterWrap li" ).click(function() {
 
     // change panel classes
@@ -31,10 +27,29 @@ $(document).ready(function(){
     var idNum = this.id.replace(/\D/g, "");
     var idStr = "#contentPane" + idNum;
     $(idStr).addClass("visible fadeIn");
+  });
+
+  //button click
+  $( ".contentPanelNavBtn" ).click(function() {
+
+    var idNum = this.id.replace(/\D/g, "");
+    var idStrContentPane = "#contentPane" + idNum;
+    var idStrChapter = "#chapter" + idNum;
+    // change panel classes
+    $(".sidePanelChapterWrap li").removeClass("sidePanelChapterSelected");
+    $(idStrChapter).toggleClass("sidePanelChapterSelected");
+
+    // Change the pane on show
+    $(".mainContentPane" ).each(function() {
+      $(this).removeClass("visible fadeOut");
+    });
+    $(idStrContentPane).addClass("visible fadeIn");
 
     // COOKIE STUFF TO GO BACK IN LATER
-    // var cookieText = "LOTF-" + this.id;
-    // setCookie(cookieText,1,60);
+    var x = parseInt(idNum)-1;
+    var cookieStr = "LOTF-chapter" + x;
+    setCookie(cookieStr,1,60);
+    checkCookies();
   });
 
   headerHeight = $('#header').height() + 140;
@@ -58,7 +73,14 @@ $(document).ready(function(){
    }());
  });
 
-
+function checkCookies(){
+  $(".sidePanelChapterWrap li" ).each(function() {
+    var cookieText = "LOTF-" + this.id;
+    if (getCookie(cookieText)){
+      $("div",this).addClass("visible");
+    }
+  });
+}
 
 // help functions
  function setCookie(name, value, days) {
