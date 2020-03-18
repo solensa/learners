@@ -5,7 +5,6 @@ html, body, bodyWrap, sidePanel {
 body {
   width: 100%;
   margin: 0;
-  font-family: Helvetica, sans-serif;
 }
 
 .header {
@@ -105,6 +104,7 @@ body {
   float: left;
   padding: 50px;
   width: calc(100% - 250px - 100px);
+  padding-top:160px;
 }
 
 .mainContentPane {
@@ -794,3 +794,476 @@ ul li i::after {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+
+
+
+
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  - - - - - - ADDITIONS NEED TO BE CONVERTED - - - - - - -- */
+/*  - - - - - - ADDITIONS NEED TO BE CONVERTED - - - - - - -- */
+/*  - - - - - - ADDITIONS NEED TO BE CONVERTED - - - - - - -- */
+/*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+
+
+.max-w-1000 {
+  max-width:1000px;
+  width:100%;
+  margin:0px auto;
+}
+
+.max-w-1100 {
+  max-width:1100px;
+  width:100%;
+  margin:0px auto;
+}
+
+.wideClear {
+  width:100%;
+  float:left;
+  clear:both;
+  position:relative;
+}
+
+.contentPanelSubtitle,
+h1, h2, h3 {
+  font-family: 'Avenir';
+  font-weight: 900;
+  font-style: normal;
+}
+
+h4, h5, h6, div,
+a, li, p, ul, ol {
+    font-family: 'Source Sans Pro';
+}
+
+
+/* - Navigation - */
+
+.lotf-navigation {
+  height:70px;
+  width:100%;
+  background-color:#060d15;
+  position:relative;
+  float:left;
+  clear:both;
+  z-index:999;
+}
+
+.sourceSans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.lotf-navigation .mainLogo {
+  width:216px;
+  height:56px;
+  display:block;
+  margin:0px auto;
+  cursor:pointer;
+}
+
+.lotf-navigation a img {
+  width:100%;
+  display:block;
+  margin-top:22px;
+}
+
+.navList li:first-child {
+  margin-left:0px;
+}
+
+.navList li:last-child {
+  margin-right:0px;
+}
+
+.transition,
+.transition:hover {
+  transition:all 0.3s ease-in-out;
+}
+
+.navList li {
+  list-style-type: none;
+  display:inline-block;
+  margin:0px 20px;
+  color:#FFF;
+  text-transform:uppercase;
+  font-size:14px;
+  position:relative;
+}
+
+.navList li a {
+  display:block;
+  color:#FFF;
+  text-transform:uppercase;
+  font-size:14px;
+  text-decoration: none;
+}
+
+.navList li.current-page a,
+.navList li a:hover {
+  color:#ffb701;
+}
+
+.navList li a::after {
+  content:'';
+  width:7px;
+  height:7px;
+  background-color:#617791;
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:-14px;
+  opacity:0;
+  transition:all 0.3s ease-in-out;
+}
+
+.navList li.current-page a::after {
+  background-color:#fff;
+  opacity:1;
+}
+
+.navList li a:hover::after {
+  opacity:1;
+  transition:all 0.3s ease-in-out;
+}
+
+.navList {
+  position:absolute;
+}
+
+.navList.left {
+	top: 23px;
+	left: 360px;
+}
+
+.navList.right {
+  top:23px;
+  right:414px;
+}
+
+.current-page span {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -36px;
+	display: block;
+  width: 50px;
+  height: 25px;
+  background-color: transparent;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  border: 1px solid #23344B;
+  border-top: 0;
+  transition:all 0.3s ease-in-out;
+}
+
+.current-page a:hover ~ span {
+  border-color:#365175;
+  transition:all 0.3s ease-in-out;
+}
+
+/* - - Title Header - - */
+
+.titleHeader {
+  z-index:50;
+  height:275px;
+  background-image: url('../../images/galaxybg.jpg');
+  background-size:cover;
+  background-position:center -50px;
+}
+
+.headerContent {
+  width:550px;
+  margin:0px auto;
+  text-align:center;
+}
+
+.headerContent h1,
+.headerContent p {
+  color:#FFF;
+  width:100%;
+}
+
+.headerContent h1 {
+	font-size: 52px;
+	margin-top: 48px;
+	margin-bottom: -5px;
+}
+
+.headerContent p {
+  font-size:18px;
+  font-style:italic;
+  font-weight:300;
+  line-height:20px;
+}
+
+.borderStrip {
+  background-color:#aabacd;
+  height:7px;
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  z-index:60;
+}
+
+
+.middleOrb {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:80;
+  width:210px;
+  height:111px;
+  background-image:url('../../images/subpage-center.png');
+  background-size:cover;
+  background-position:center top;
+}
+
+.middleOrb img {
+  position:absolute;
+  left:69px;
+  top:-28px;
+  width:70px;
+  height:70px;
+  display:block;
+  transition:top 0.3s ease-in-out;
+}
+
+
+/* - - Copy Styling - - */
+
+.columnText {
+	margin: 10px 0 20px 0;
+	display: block;
+	font-size: 14px;
+}
+
+.columnSubtitle {
+  font-weight:bold;
+}
+
+.columnHalf {
+  width:320px;
+  height:auto;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+.columnHalf {
+	width: 320px;
+	height: auto;
+}
+
+.columnImg {
+  display:none;
+}
+
+.columnTitle {
+  margin-bottom:30px;
+  position:relative;
+}
+
+.columnTitle::after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: -15px;
+	height: 1px;
+	width: 100%;
+	background-color: #eaeaea;
+}
+
+.contentPanelTextBlock {
+  max-width:600px;
+}
+
+.columnThird {
+  height:Auto;
+}
+
+.accordionBlock h4 {
+	margin: 14px 0px;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.accordionDivider {
+	width: 100%;
+	float: left;
+	clear: both;
+	padding: 10px 20px 11px;
+	margin: 25px 0px 20px;
+	background-color: #f5f2f9;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+	font-size: 14px;
+	border: 1px solid #dccee4;
+	border-radius: 36px;
+}
+
+.paraWrap h4 {
+  max-width:750px;
+}
+
+/* - - Animations  - - */
+
+
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  75% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+/* - Webfonts - */
+
+.contentPanelTitle,
+.avenir { font-family: 'Avenir'; font-weight:900; }
+.sourceSansPro { font-family: 'Source Sans Pro'; }
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-Black.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../fonts/Avenir-Black.woff2') format('woff2'),
+        url('../../fonts/Avenir-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-Italic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-ExtraLight.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-LightItalic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-BlackItalic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-ExtraLightItalic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-BoldItalic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-Light.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../fonts/SourceSansPro-SemiBoldItalic.woff2') format('woff2'),
+        url('../../fonts/SourceSansPro-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* -- -- -- -- */
