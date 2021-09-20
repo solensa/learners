@@ -1,0 +1,33 @@
+.titleHeader {
+  padding: 80px 0px 60px !important;
+}
+.max-w-1000 {
+  width: 1000px;
+}
+.borderStrip {
+  background-color: #ffb701;
+  height: 7.5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 60;
+  width: 1000px;
+  margin: 0 auto;
+}
+.innerBg {
+  width: 1000px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  height: 1000px;
+  padding: 20px 30px;
+}
+.outerBg {
+  width: 100%;
+  background-color: white;
+  height: 1000px;
+  top: 400px;
+  position: relative;
+  z-index: -1;
+}
