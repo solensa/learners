@@ -1,6 +1,9 @@
 .titleHeader {
   padding: 80px 0px 60px !important;
 }
+.exploreHeader {
+  margin: 30px 0 10px 0;
+}
 .max-w-1000 {
   width: 1000px;
 }
@@ -21,7 +24,7 @@
   margin: 0 auto;
   position: relative;
   height: 1000px;
-  padding: 20px 30px;
+  padding: 90px 30px 0 30px;
 }
 .outerBg {
   width: 100%;
@@ -36,7 +39,7 @@
 
 .radBtns {
   list-style-type: none;
-  margin: 25px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
   text-align: center;
   font-size: 18px;
