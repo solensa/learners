@@ -7,6 +7,9 @@
 .max-w-1000 {
   width: 1000px;
 }
+.w380 {
+  width: 380px;
+}
 .borderStrip {
   background-color: #ffb701;
   height: 7.5px;
@@ -33,6 +36,13 @@
   top: 400px;
   position: relative;
   z-index: -1;
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block;
 }
 
 /* radio button */
@@ -127,7 +137,7 @@
   border: 2px solid #183159;
 }
 .resultsBox::before {
-  background-image: url(../../images/spacebg2.jpg);
+  /* background-image: url(../../images/spacebg2.jpg); */
   background-size: cover;
   background-position: center;
   content: "";

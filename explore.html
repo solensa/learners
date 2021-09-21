@@ -9,9 +9,11 @@
     <link rel='stylesheet' href="./assets/css/style.css"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/explore.js"></script>
 
     
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
@@ -26,7 +28,7 @@
   <script
     type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.js"
-  ></script>
+  ></script> -->
   </head>
 
   <body>
@@ -70,82 +72,86 @@
         <h2 class="exploreHeader">Select an Area of Change</h2>
         <ul class="radBtns">
           <li>
-            <input type="radio" id="change1" name="amount" />
-            <label for="change1">Digital Engineering Tool Use</label>
+            <input type="radio" id="change0" name="change" onclick="radioClick(0)"/>
+            <label for="change0">Digital Engineering Tool Use</label>
           </li>
           <li>
-            <input type="radio" id="change2" name="amount" />
-            <label for="change2">Use of Data & Analytics</label>
+            <input type="radio" id="change1" name="change" onclick="radioClick(1)"/>
+            <label for="change1">Use of Data & Analytics</label>
           </li>
           <li>
-            <input type="radio" id="change3" name="amount" checked="checked" />
-            <label for="change3">Advanced Materials</label>
+            <input type="radio" id="change2" name="change" onclick="radioClick(2)" />
+            <label for="change2">Advanced Materials</label>
           </li>
           <li>
-            <input type="radio" id="change4" name="amount" />
-            <label for="change4">Advanced Manufacturing</label>
+            <input type="radio" id="change3" name="change" onclick="radioClick(3)"/>
+            <label for="change3">Advanced Manufacturing</label>
           </li>
           <li>
-            <input type="radio" id="change5" name="amount" />
-            <label for="change5">Autonomous Construction</label>
+            <input type="radio" id="change4" name="change" onclick="radioClick(4)"/>
+            <label for="change4">Autonomous Construction</label>
           </li>
           <li>
-            <input type="radio" id="change6" name="amount" />
-            <label for="change6">Sustainability</label>
+            <input type="radio" id="change5" name="change" onclick="radioClick(5)"/>
+            <label for="change5">Sustainability</label>
           </li>
         </ul>
         <!-- explore -->
         <h2 class="exploreHeader">Select a Function</h2>
         <ul class="radBtns">
           <li>
-            <input type="radio" id="change1" name="amount" />
-            <label for="change1">Product R&D</label>
+            <input type="radio" id="changeFunc0" name="function" onclick="radioFuncClick(0)"/>
+            <label for="changeFunc0">Product R&D</label>
           </li>
           <li>
-            <input type="radio" id="change2" name="amount" />
-            <label for="change2">Design</label>
+            <input type="radio" id="changeFunc1" name="function" onclick="radioFuncClick(1)"/>
+            <label for="changeFunc1">Design</label>
           </li>
           <li>
-            <input type="radio" id="change3" name="amount" checked="checked" />
-            <label for="change3">Procurement</label>
+            <input type="radio" id="changeFunc2" name="function" onclick="radioFuncClick(2)"/>
+            <label for="changeFunc2">Procurement</label>
           </li>
           <li>
-            <input type="radio" id="change4" name="amount" />
-            <label for="change4">Manufacture</label>
+            <input type="radio" id="changeFunc3" name="function" onclick="radioFuncClick(3)"/>
+            <label for="changeFunc3">Manufacture</label>
           </li>
           <li>
-            <input type="radio" id="change5" name="amount" />
-            <label for="change5">Construction</label>
+            <input type="radio" id="changeFunc4" name="function" onclick="radioFuncClick(4)"/>
+            <label for="changeFunc4">Construction</label>
           </li>
           <li>
-            <input type="radio" id="change6" name="amount" />
-            <label for="change6">Operation & Maintenance</label>
+            <input type="radio" id="changeFunc5" name="function" onclick="radioFuncClick(5)"/>
+            <label for="changeFunc5">Operation & Maintenance</label>
           </li>
         </ul>
           <!-- explore role -->
-          <h2 class="exploreHeader">Select a Role</h2>
-          <ul class="radBtns">
+          <h2 id="rolesTitle" class="exploreHeader hide">Select a Role</h2>
+          <ul id="roles0" class="radBtns radBtnsRoles hide">
             <li>
-              <input type="radio" id="change1" name="amount" />
-              <label for="change1">Product Development </label>
+              <input type="radio" id="roleA0" name="roleA" class="roleClass" onclick="radioRoleClick(0)" />
+              <label for="roleA0">Product Development </label>
             </li>
             <li>
-              <input type="radio" id="change2" name="amount" />
-              <label for="change2">Process Planning</label>
+              <input type="radio" id="roleA1" name="roleA" class="roleClass" onclick="radioRoleClick(1)" />
+              <label for="roleA1">Process Planning</label>
             </li>
             <li>
-              <input type="radio" id="change3" name="amount" checked="checked" />
-              <label for="change3">Product Testing</label>
+              <input type="radio" id="roleA2" name="roleA" class="roleClass" onclick="radioRoleClick(2)" />
+              <label for="roleA2">Product Testing</label>
             </li>
           </ul>
 
           <div class="row removeTopBorder">
-            <div class="resultsSection">
+            <div id="resultsSection" class="resultsSection hide">
               <div class="resultsBox row">
                 <div class="lastBoxInner">
-                  <div class="leftBox">
-                    <h2>How will this affect us?</h2>
-                    <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore alim ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod.</p>
+                  <div class="leftBox w380">
+                    <h2>Growing</h2>
+                    <p id="growBullets"></p>
+                  </div>
+                  <div class="rightBox w380">
+                    <h2>Shrinking</h2>
+                    <p id="shrinkBullets"></p>
                   </div>
                 </div>
               </div>
