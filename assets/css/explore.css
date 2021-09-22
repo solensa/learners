@@ -3,6 +3,7 @@
 }
 .exploreHeader {
   margin: 30px 0 10px 0;
+  text-align: left;
 }
 .max-w-1000 {
   width: 1000px;
@@ -27,7 +28,7 @@
   margin: 0 auto;
   position: relative;
   height: 1000px;
-  padding: 90px 30px 0 30px;
+  padding: 125px 30px 0 30px;
 }
 .outerBg {
   width: 100%;
@@ -55,15 +56,15 @@
   font-size: 18px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  /* align-items: center; */
   flex-wrap: wrap;
   z-index: 10;
 }
 
 .radBtns li {
   /* float: left; */
-  margin: 5px;
+  margin: 3px 5px;
   position: relative;
   display: inline-block;
 }
@@ -92,7 +93,6 @@
 }
 
 .radBtns label {
-  padding: 10px 30px;
   border: 1px solid #183159;
   cursor: pointer;
   z-index: 90;
@@ -101,14 +101,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 62px;
-  width: 143px;
-  padding: 15px 40px;
+  height: 50px;
+  width: 110px;
+  padding: 15px 5px;
   border-radius: 5px;
   font-weight: 700;
   background-color: white;
   transition: 0.3s ease-in-out;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -116,6 +116,10 @@
   /* background: #ddd; */
   /* color: #ffb701; */
   border: 1px solid #ffb701;
+}
+
+.radBtns li:nth-child(odd) {
+  margin-left: 0;
 }
 
 .resultsSection {
@@ -149,4 +153,19 @@
   top: 0px;
   left: 0px;
   right: 0px;
+}
+
+.colThird {
+  width: 300px;
+  float: left;
+  padding: 30px;
+  border: 2px solid #183159;
+  border-radius: 5px;
+  margin: 10px;
+}
+.colThird:nth-child(1) {
+  margin-left: 0;
+}
+.colThird:nth-child(3) {
+  margin-right: 0;
 }
