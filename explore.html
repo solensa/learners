@@ -6,10 +6,11 @@
     <title>Explore 2030</title>
     <link rel='stylesheet' href="./assets/css/index.css"></link>
     <link rel='stylesheet' href="./assets/css/explore.css"></link>
-    <link rel='stylesheet' href="./assets/css/style.css"></link>
+    <!-- <link rel='stylesheet' href="./assets/css/style.css"></link> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/data2.js"></script>
     <script src="./assets/js/explore.js"></script>
 
     
@@ -36,13 +37,13 @@
     <!-- Navigation -->
     <div class="wideClear lotf-navigation">
       <div class="max-w-1100">
-        <a class="mainLogo" href="https://www.google.com/">
+        <a class="mainLogo" href="./index.html">
           <img src="images/lotf-nav-logo-center.png">
         </a>
 
         <ul class="navList left sourceSans">
-          <li class=""><a class="transition" href="/xxx/">Home</a><span></span></li>
-          <li class="current-page"><a class="transition" href="/xxx/">Explore 2030</a><span></span></li>
+          <li class=""><a class="transition" href="./index.html">Home</a><span></span></li>
+          <li class="current-page"><a class="transition" href="./explore.html">Explore 2030</a><span></span></li>
         </ul>
 
         <ul class="navList right sourceSans">
@@ -58,19 +59,20 @@
     <div class="wideClear titleHeader">
       <div class="headerContent">
         <h1>Explore 2030</h1>
-        <!-- <p>Lorem ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore alim ipsum dolor sit amet, ectetur adipiscing elit, sed do eiusmod.</p> -->
+        <p>Explore what these changes mean for our functions and roles. Select different areas of change, function and role below to see what is becoming increasingly important and what will become less important.</p>
       </div>
     </div>
 
     <!-- Header End -->
     <!-- Content Page -->
 
-    <div class="contentSpace wideClear">
+    <div class="contentSpace wideClear ">
       <div class="borderStrip wideClear"></div>
       <div class="middleOrb"><img class="hvr-pulse" src="images/orb-purplepink.png"></div>
       <div class="innerBg">
         <div class="colThird">
           <h2 class="exploreHeader">Area of Change</h2>
+          <p>Select an area below:</p>
           <ul class="radBtns">
             <li>
               <input type="radio" id="change0" name="change" onclick="radioClick(0)"/>
@@ -101,6 +103,7 @@
         <!-- explore -->
         <div class="colThird">
           <h2 class="exploreHeader">Functions</h2>
+          <p>Select a function below:</p>
           <ul class="radBtns">
             <li>
               <input type="radio" id="changeFunc0" name="function" onclick="radioFuncClick(0)"/>
@@ -130,7 +133,8 @@
         </div>
           <!-- explore role -->
           <div class="colThird">
-            <h2 id="rolesTitle" class="exploreHeader hide">Roles</h2>
+            <h2 id="rolesTitle" class="exploreHeader">Roles</h2>
+            <p>Select a role below:</p>
             <ul id="roles0" class="radBtns radBtnsRoles hide">
               <li>
                 <input type="radio" id="roleA0" name="roleA" class="roleClass" onclick="radioRoleClick(0)" />
@@ -152,21 +156,44 @@
               <div class="resultsBox row">
                 <div class="lastBoxInner">
                   <div class="leftBox w380">
-                    <h2>Growing</h2>
+                    <h2>Growing in Role</h2>
                     <p id="growBullets"></p>
                   </div>
                   <div class="rightBox w380">
-                    <h2>Shrinking</h2>
+                    <h2>Shrinking in Role</h2>
                     <p id="shrinkBullets"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="row removeTopBorder">
+            <div id="resultsSection2" class="resultsSection hide">
+              <div class="resultsBox row">
+                <div class="lastBoxInner">
+                  <div class="leftBox w380">
+                    <h2>Growing in Function</h2>
+                    <p id="growBullets2"></p>
+                  </div>
+                  <div class="rightBox w380">
+                    <h2>Shrinking in Function</h2>
+                    <p id="shrinkBullets2"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h1 class='questionTitle'>What are your thoughts?</h1>
+          <a class="mainLogo" href="./explore.html">
+            <div id="" class="yammerBtn">JOIN THE DISCUSSION</div>
+          </a>
       </div>
     </div>
-    <div class="outerBg"></div>
-
+    <div class="outerBg "></div>
+    <div class="footer exploreFooter"></div>
     <!-- Content Page End -->
 
 

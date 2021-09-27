@@ -1,5 +1,5 @@
 .titleHeader {
-  padding: 80px 0px 60px !important;
+  padding: 80px 0px 47px 0 !important;
 }
 .exploreHeader {
   margin: 0 0 10px 0;
@@ -19,16 +19,23 @@
   left: 0px;
   right: 0px;
   z-index: 60;
-  width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 .innerBg {
-  width: 1000px;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   position: relative;
-  height: 1000px;
+  /* height: 1000px; */
   padding: 125px 30px 0 30px;
+  /* display: flex; */
+  /* justify-content: center; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 .outerBg {
   width: 100%;
@@ -126,13 +133,13 @@
   text-align: center;
   position: relative;
   z-index: 10;
-  width: 100%;
+  width: 940px;
   margin: 0 auto;
 }
 
 .removeTopBorder {
   border-top: 0px;
-  padding-top: 30px;
+  padding: 30px 0 0 0;
 }
 .resultsBox {
   text-align: left;
@@ -162,7 +169,7 @@
   padding: 30px;
   border: 2px solid #183159;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 10px 0 10px;
 }
 .colThird:nth-child(1) {
   margin-left: 0;
@@ -170,7 +177,42 @@
 .colThird:nth-child(3) {
   margin-right: 0;
 }
+.colThird p {
+  font-size: 15px;
+  text-align: left;
+  font-style: italic;
+}
 .lastBoxInner li {
   font-size: 15px;
   margin: 0 0 8px -24px;
+}
+
+.yammerBtn {
+  padding: 15px 40px;
+  border: 1px solid #ffb701;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  background-color: #ffb701;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+.yammerBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.mainLogo {
+  text-decoration: none;
+}
+.questionTitle {
+  margin: 50px auto 35px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.exploreFooter {
+  background-color: white;
+  margin-top: 0;
 }
