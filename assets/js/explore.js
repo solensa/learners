@@ -3,7 +3,6 @@ var resultsArr = [-1, -1, -1];
 const radioClick = (x) => {
   resultsArr[0] = x;
   returnHtml(arrToStr(resultsArr));
-  console.log(resultsArr);
 };
 const radioFuncClick = (x) => {
   if (resultsArr[1] != x) {
@@ -14,12 +13,10 @@ const radioFuncClick = (x) => {
   $("#roles" + x).removeClass("hide");
 
   returnHtml(arrToStr(resultsArr));
-  console.log(resultsArr);
 };
 const radioRoleClick = (x) => {
   resultsArr[2] = x;
   returnHtml(arrToStr(resultsArr));
-  console.log(resultsArr);
 };
 
 const unCheck = () => {
@@ -32,12 +29,13 @@ const unCheck = () => {
 };
 
 const returnHtml = (index) => {
+  console.log(index);
   let matchFound = false;
   let matchFound2 = false;
 
   // check if function results box should be shown
   for (let i = 0; i < data2.length; i++) {
-    if (data2[i][0] == index[1]) {
+    if (data2[i][0] == index[0]) {
       let str = "<ul>";
       let str2 = "<ul>";
       for (let j = 0; j < data2[i][1].length; j++) {
@@ -76,6 +74,9 @@ const returnHtml = (index) => {
   if (!matchFound2) {
     $("#resultsSection2").addClass("hide");
   }
+  if (matchFound && matchFound2) {
+    scrollToId("#resultsSection");
+  }
 };
 
 const arrToStr = (arr) => {
@@ -84,4 +85,14 @@ const arrToStr = (arr) => {
     str += arr[i];
   }
   return str;
+};
+
+const scrollToId = (id) => {
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top - 50,
+    },
+    400,
+    "easeOutCirc"
+  );
 };

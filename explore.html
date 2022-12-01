@@ -25,11 +25,11 @@
   <script
     type="text/javascript"
     src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
-  ></script>
+  ></script> -->
   <script
     type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.js"
-  ></script> -->
+  ></script>
   </head>
 
   <body>
@@ -149,6 +149,108 @@
                 <label for="roleA2">Product Testing</label>
               </li>
             </ul>
+            <ul id="roles1" class="radBtns radBtnsRoles hide">
+              <li>
+                <input type="radio" id="roleB0" name="roleB" class="roleClass" onclick="radioRoleClick(0)" />
+                <label for="roleB0">Detailed Design</label>
+              </li>
+              <li>
+                <input type="radio" id="roleB1" name="roleB" class="roleClass" onclick="radioRoleClick(1)" />
+                <label for="roleB1">Design for Manufacture</label>
+              </li>
+              <li>
+                <input type="radio" id="roleB2" name="roleB" class="roleClass" onclick="radioRoleClick(2)" />
+                <label for="roleB2">Production Planning</label>
+              </li>
+            </ul>
+            <ul id="roles2" class="radBtns radBtnsRoles hide">
+              <li>
+                <input type="radio" id="roleC0" name="roleC" class="roleClass" onclick="radioRoleClick(0)" />
+                <label for="roleC0">Materials & Equipment</label>
+              </li>
+              <li>
+                <input type="radio" id="roleC1" name="roleC" class="roleClass" onclick="radioRoleClick(1)" />
+                <label for="roleC1">Labour</label>
+              </li>
+            </ul>
+            <ul id="roles3" class="radBtns radBtnsRoles hide">
+              <li>
+                <input type="radio" id="roleD0" name="roleD" class="roleClass" onclick="radioRoleClick(0)" />
+                <label for="roleD0">Production</label>
+              </li>
+              <li>
+                <input type="radio" id="roleD1" name="roleD" class="roleClass" onclick="radioRoleClick(1)" />
+                <label for="roleD1">Quality Control</label>
+              </li>
+              <li>
+                <input type="radio" id="roleD2" name="roleD" class="roleClass" onclick="radioRoleClick(2)" />
+                <label for="roleD2">Transportation</label>
+              </li>
+              <li>
+                <input type="radio" id="roleD3" name="roleD" class="roleClass" onclick="radioRoleClick(3)" />
+                <label for="roleD3">Logistics</label>
+              </li>
+            </ul>
+            <ul id="roles4" class="radBtns radBtnsRoles hide">
+              <li>
+                <input type="radio" id="roleE0" name="roleE" class="roleClass" onclick="radioRoleClick(0)" />
+                <label for="roleE0">Site Supervision</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE1" name="roleE" class="roleClass" onclick="radioRoleClick(1)" />
+                <label for="roleE1">Enabling Works</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE2" name="roleE" class="roleClass" onclick="radioRoleClick(2)" />
+                <label for="roleE2">Excavation</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE3" name="roleE" class="roleClass" onclick="radioRoleClick(3)" />
+                <label for="roleE3">Surveying & Setting Out</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE4" name="roleE" class="roleClass" onclick="radioRoleClick(4)" />
+                <label for="roleE4">Foundation/Sub Structure</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE5" name="roleE" class="roleClass" onclick="radioRoleClick(5)" />
+                <label for="roleE5">Utilities</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE6" name="roleE" class="roleClass" onclick="radioRoleClick(6)" />
+                <label for="roleE6">Structure inc. lifting</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE7" name="roleE" class="roleClass" onclick="radioRoleClick(7)" />
+                <label for="roleE7">Envelope (facades etc)</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE8" name="roleE" class="roleClass" onclick="radioRoleClick(8)" />
+                <label for="roleE8">MEP</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE9" name="roleE" class="roleClass" onclick="radioRoleClick(9)" />
+                <label for="roleE9">Fit-out</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE10" name="roleE" class="roleClass" onclick="radioRoleClick(10)" />
+                <label for="roleE10">Comissioning</label>
+              </li>
+              <li>
+                <input type="radio" id="roleE11" name="roleE" class="roleClass" onclick="radioRoleClick(11)" />
+                <label for="roleE11">Installation</label>
+              </li>
+            </ul>
+            <ul id="roles5" class="radBtns radBtnsRoles hide">
+              <li>
+                <input type="radio" id="roleF0" name="roleF" class="roleClass" onclick="radioRoleClick(0)" />
+                <label for="roleF0">Facilities Management</label>
+              </li>
+              <li>
+                <input type="radio" id="roleF1" name="roleF" class="roleClass" onclick="radioRoleClick(1)" />
+                <label for="roleF1">Maintenance</label>
+              </li>
+            </ul>
           </div>
 
           <div class="row removeTopBorder">
@@ -173,11 +275,11 @@
               <div class="resultsBox row">
                 <div class="lastBoxInner">
                   <div class="leftBox w380">
-                    <h2>Growing in Function</h2>
+                    <h2>Growing for Everyone</h2>
                     <p id="growBullets2"></p>
                   </div>
                   <div class="rightBox w380">
-                    <h2>Shrinking in Function</h2>
+                    <h2>Shrinking for Everyone</h2>
                     <p id="shrinkBullets2"></p>
                   </div>
                 </div>
@@ -187,7 +289,7 @@
 
 
           <h1 class='questionTitle'>What are your thoughts?</h1>
-          <a class="mainLogo" href="./explore.html">
+          <a class="mainLogo" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI3OTI3MTY0OTI4MCJ9/all" target="_blank">
             <div id="" class="yammerBtn">JOIN THE DISCUSSION</div>
           </a>
       </div>

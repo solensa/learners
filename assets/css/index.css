@@ -993,7 +993,7 @@ ol {
 
 /* - - Title Header - - */
 .titleHeader {
-  padding: 80px 0px 200px !important;
+  padding: 80px 0px 120px !important;
   border-top: 0 solid black !important;
 }
 .titleHeader::before {
@@ -1028,7 +1028,7 @@ ol {
 
 .headerContent h1 {
   font-size: 52px;
-  margin-top: 48px;
+  margin-top: 40px;
   margin-bottom: -5px;
 }
 
@@ -1264,7 +1264,7 @@ ol {
   content: "";
   width: 100%;
   height: 100%;
-  opacity: 0.05;
+  opacity: 0.1;
   z-index: 5;
   position: absolute;
   top: 0px;
@@ -1275,12 +1275,12 @@ ol {
 .contentBg6::before {
   background-image: url("../../images/environmentbg.jpg");
   background-size: cover;
-  background-position: center -260px;
+  background-position: center -90px;
 
   content: "";
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.14;
   z-index: 5;
   position: absolute;
   top: 0px;
