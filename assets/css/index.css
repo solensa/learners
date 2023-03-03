@@ -9,7 +9,7 @@ body {
     #031328 30%,
     #010a17 100%
   );
-  font-family: "Century Gothic";
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .header {
@@ -849,7 +849,7 @@ ul li i::after {
 h1,
 h2,
 h3 {
-  font-family: "Century Gothic";
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-weight: 900;
   font-style: normal;
 }
